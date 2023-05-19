@@ -5,7 +5,7 @@ import * as cors from 'cors';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  const allowedOrigins = ['http://localhost:3002', 'r://nextapp-production.up.railway.app', 'https://evil-riddle-production.up.railway.app'];
+  const allowedOrigins = ['http://localhost:3002', 'r://nextapp-production.up.railway.app', 'https://testrailway-production-cf5a.up.railway.app'];
 
   app.use(cors({
     origin: (origin, callback) => {
